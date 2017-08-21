@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DummyComponent } from './dummy/dummy.component';
+import { HolidaydataComponent } from './holidaydata/holidaydata.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DummyComponent,
+    HolidaydataComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
